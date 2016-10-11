@@ -2,6 +2,7 @@
 j32013:{[year]
     possible:(1+year)_ !10001
     tester:{4=#?10\:x}
+    / K3 version: tester:{4=#?10 _vs x}
     :possible@1#&tester'possible
  }
 
