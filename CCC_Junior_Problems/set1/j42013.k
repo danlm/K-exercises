@@ -1,9 +1,5 @@
 / Solution
-j42013:{[time;chores]
-    sorted:chores@<chores
-    :(~time<*sorted)*1+*|&~time<+\sorted
- }
-
+j42013:{[time;chores] +/~time<+\chores@<chores}
 
 / Test data
 a1T:6
