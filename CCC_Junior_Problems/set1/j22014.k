@@ -1,6 +1,6 @@
 / Solution
 j22014:{[votes]
-    s:(+/"A"='votes),+/"B"='votes
+    s:+/'"AB"=\:votes
     :("Tie";"A";"B")@(~=/s)*1+*>s
  }
 
