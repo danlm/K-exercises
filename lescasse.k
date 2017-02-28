@@ -24,7 +24,7 @@ Display:{[dist]
  }
 
 / Quiz 5 - Evaluate a Bridge cards distribution
-Eval:{4 3 2 1*+/'"AKQJ"=\:*{*:'|:'x}'x}
+Eval:{{+/4 3 2 1*+/'"AKQJ"=\:x}'{*:'|:'x}'x}
 
 aaa:Dist[]
 #aaa
