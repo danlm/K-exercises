@@ -16,10 +16,10 @@ Split:{+{{-1_,/x}'((pips,'((*:'x)?pips)_(*:'|:'x)),\:\:" ")}'x}
 / Quiz 4 - Properly display the Bridge cards distribution
 Display:{[dist]
     result:12 3#()
-    result[0 1 2 3;1]:bbb[;0]
-    result[4 5 6 7;0]:bbb[;1]
-    result[4 5 6 7;2]:bbb[;2]
-    result[8 9 10 11;1]:bbb[;3]
+    result[0 1 2 3;1]:dist[;0]
+    result[4 5 6 7;0]:dist[;1]
+    result[4 5 6 7;2]:dist[;2]
+    result[8 9 10 11;1]:dist[;3]
     :result
  }
 
