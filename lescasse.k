@@ -26,6 +26,17 @@ Display:{[dist]
 / Quiz 5 - Evaluate a Bridge cards distribution
 Eval:{{+/4 3 2 1*+/'"AKQJ"=\:x}'{*:'|:'x}'x}
 
+/ Quiz 6 - Find a Bridge cards distribution under constraint
+Find:{[limit]
+    curr:SortDist Dist[]
+    / Recursive solution only works up to 24
+    / $[limit>*Eval curr;:Find limit;:Display Split curr]
+    / Looping solution works up to 30
+    while[limit>*Eval curr; curr:SortDist Dist[]]
+    :Display Split curr
+ }
+
+/
 aaa:Dist[]
 #aaa
 #:'aaa
@@ -33,3 +44,6 @@ aaa:Dist[]
 aaa:SortDist aaa
 bbb:Split aaa
 Display bbb
+Eval bbb
+Find 15
+Find 28
